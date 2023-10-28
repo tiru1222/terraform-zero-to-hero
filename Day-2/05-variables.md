@@ -48,6 +48,7 @@ In this example:
 - `output` is used to declare an output variable named `example_output`.
 - `description` provides a description of the output variable.
 - `value` specifies the value that you want to expose as an output variable. This value can be a resource attribute, a computed value, or any other expression.
+- Here resource- type of resource; example_resource- resource name; example.id- specify the value that u want to expose.
 
 You can reference output variables in the root module or in other modules by using the syntax `module.module_name.output_name`, where `module_name` is the name of the module containing the output variable.
 
