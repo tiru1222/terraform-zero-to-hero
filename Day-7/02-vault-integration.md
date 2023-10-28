@@ -106,7 +106,7 @@ capabilities = ["create", "read", "update", "list"]
 }
 EOF
 ```
-
+we can take any one of the above.
 Now you'll need to create an AppRole with appropriate policies and configure its authentication settings. Here are the steps to create an AppRole:
 
 **a. Create the AppRole**:
