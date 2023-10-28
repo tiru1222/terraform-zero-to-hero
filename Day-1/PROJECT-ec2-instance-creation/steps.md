@@ -58,3 +58,6 @@ TERRAFORM DESTROY:
 It will destroy terraform-managed infrastructure or the existing enviornment
 NOTE:
 We can use -auto-approve command for Apply and Destroy phases.
+Lets assume if we have multiple instances/resources in a terraform, if we want to delete a single instance/resorce first we have to check the list of resources present in main.tf file using terraform state list
+so it will gives the list of entire resources to delete particular resorce:
+terraform destroy -target=aws_instance.key[0]
