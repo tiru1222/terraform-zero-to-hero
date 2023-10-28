@@ -56,7 +56,7 @@ DynamoDB is used for state locking when a remote backend is configured. It ensur
    ```sh
    aws dynamodb create-table --table-name your-dynamodb-table --attribute-definitions AttributeName=LockID,AttributeType=S --key-schema AttributeName=LockID,KeyType=HASH --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
    ```
-
+OR through terraform also we can directly cofigure it.
 2. **Configure the DynamoDB Table in Terraform Backend Configuration:**
 
    In your Terraform configuration, as shown above, provide the DynamoDB table name in the `dynamodb_table` field under the backend configuration.
