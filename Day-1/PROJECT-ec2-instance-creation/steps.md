@@ -45,4 +45,15 @@ If you want to remove the resources created by Terraform, you can use the follow
 terraform destroy
 ```
 
-Be cautious when using `terraform destroy` as it will delete resources as specified in your Terraform configuration.
+Be cautious when using `terraform destroy` as it will delete resources as specified in your 
+TERRAFORM lifecycle:
+TERRAFORM INIT:
+It initializes the provider, module version requirements, and backend configurations.
+TERRAFORM PLAN:
+Determines the state of all resources and compares them with real or existinginfrastructure. It uses terraform state file data to compare and provider API to check.
+TERRAFORM APPLY:
+Executes the actions proposed in a Terraform plan.
+TERRAFORM DESTROY:
+It will destroy terraform-managed infrastructure or the existing enviornment
+NOTE:
+We can use -auto-approve command for Apply and Destroy phases.
