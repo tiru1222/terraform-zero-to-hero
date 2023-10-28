@@ -52,6 +52,8 @@ export AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
 
 Then, you would configure Terraform to read the environment variable by adding the following line to your Terraform configuration file:
 
-variable "aws_access_key_id" {
-  source = "env://AWS_ACCESS_KEY_ID"
+variable "example_var" {
+  description = "An example variable"
+  type        = string
+  default     = var.TF_VAR_example_var
 }
