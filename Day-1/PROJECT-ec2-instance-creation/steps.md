@@ -45,7 +45,8 @@ If you want to remove the resources created by Terraform, you can use the follow
 terraform destroy
 ```
 
-Be cautious when using `terraform destroy` as it will delete resources as specified in your 
+Be cautious when using `terraform destroy` as it will delete resources as specified in your
+
 TERRAFORM lifecycle:
 TERRAFORM INIT:
 It initializes the provider, module version requirements, and backend configurations.
