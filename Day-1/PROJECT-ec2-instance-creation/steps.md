@@ -12,7 +12,7 @@ Create a directory for your Terraform project and create a Terraform configurati
      instance_type = "t2.micro"
    }
 ```
-
+Actually if u press dot(.) in github it will directly goes to visual-studio here we install some plugins called terraform, HCL,.. to automate terraform coding process like pre-suggestions, indetations.
 ## Initialize Terraform**
 
 In your terminal, navigate to the directory containing your Terraform configuration files and run:
