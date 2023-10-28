@@ -1,3 +1,11 @@
+TERRAFORM WORKSPACE:
+Terraform Workspace is something that you can use when you want to work on multiple environments at same time.
+To create a new workspace : terraform workspace new workspace_name
+To list the workspace: terraform workspace list
+To show current workspace: terraform workspace show
+To switch workspace: terraform workspace select workspace_name
+So here u can swithed to different environments and if u use terraform apply state_files created for different environments separately.
+
 provider "aws" {
   region = "us-east-1"
 }
