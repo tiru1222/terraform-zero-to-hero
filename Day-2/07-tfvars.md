@@ -28,4 +28,5 @@ Here's how you typically use `.tfvars` files
 terraform apply -var-file=dev.tfvars
 ```
 
+OR if u use file name as terraform.tfvars then no need to specify in cmmds automatically takes.
 By using `.tfvars` files, you can keep your Terraform code more generic and flexible while tailoring configurations to different scenarios and environments.
