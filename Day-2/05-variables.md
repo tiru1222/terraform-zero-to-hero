@@ -34,7 +34,7 @@ You reference the input variable using `var.example_var`.
 
 ## Output Variables
 
-Output variables allow you to expose values from your module or configuration, making them available for use in other parts of your Terraform setup. Here's how you define an output variable:
+Output variables allow you to expose values/To print the output value from your module or configuration, making them available for use in other parts of your Terraform setup. Here's how you define an output variable:
 
 ```hcl
 output "example_output" {
