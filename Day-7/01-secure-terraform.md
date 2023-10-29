@@ -20,7 +20,7 @@ There are a few ways to manage sensitive information in Terraform files. Here ar
 
 Here are some specific examples of how to use these methods:
 
-To mark a variable as sensitive, you would add the sensitive attribute to the variable declaration. 
+1). To mark a variable as sensitive, you would add the sensitive attribute to the variable declaration. 
 
 For example:
 
@@ -28,15 +28,15 @@ variable "aws_access_key_id" {
   sensitive = true
 }
 
-To store sensitive data in a secret management system, you would first create a secret in the secret management system. Then, you would configure Terraform to read the secret from the secret management system. 
+2). To store sensitive data in a secret management system, you would first create a secret in the secret management system. Then, you would configure Terraform to read the secret from the secret management system. 
 
 For example, to read a secret from HashiCorp Vault, you would use the vault_generic_secret data source explained in main.tf file.
 
-To encrypt the Terraform state file, you would first configure a secure remote backend for the state file. Then, you would encrypt the state file using the terraform encrypt command.
+3). To encrypt the Terraform state file, you would first configure a secure remote backend for the state file. Then, you would encrypt the state file using the terraform encrypt command.
 
 terraform encrypt
 
-To use environment variables, you would first define the environment variables in your operating system. Then, you would configure Terraform to read the environment variables when it is run. 
+4). To use environment variables, you would first define the environment variables in your operating system. Then, you would configure Terraform to read the environment variables when it is run. 
 
 For example, to define an environment variable called AWS_ACCESS_KEY_ID, you would use the following command:
 
