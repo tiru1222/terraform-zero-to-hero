@@ -48,5 +48,5 @@ variable "example_var" {
  
   description = "An example variable"
   type        = string
-  default     = var.TF_VAR_example_var
-}
+  default     = var.AWS_ACCESS_KEY_ID
+  }
