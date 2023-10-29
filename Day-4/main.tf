@@ -19,6 +19,6 @@ resource "aws_dynamodb_table" "terraform_lock" {
 
   attribute {
     name = "LockID"
-    type = "S"   #if LockID is string
+    type = "S"   #bcoz LockID(hash_key) is string
   }
 }
