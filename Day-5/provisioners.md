@@ -48,7 +48,7 @@ Certainly, let's delve deeper into the `file`, `remote-exec`, and `local-exec` p
        type        = "ssh"
        user        = "ec2-user"
        private_key = file("~/.ssh/id_rsa")
-       host        = aws_instance.example.public_ip
+       host        = aws_instance.example.public_ip OR self.public_ip
      }
    }
    ```
