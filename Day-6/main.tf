@@ -4,7 +4,8 @@ To create a new workspace : terraform workspace new workspace_name
 To list the workspace: terraform workspace list
 To show current workspace: terraform workspace show
 To switch workspace: terraform workspace select workspace_name
-So here u can swithed to different environments and if u use terraform apply state_files created for different environments separately.
+By using terraform workspace we can create folders for each team and configure resouces without overlapping.
+So here u can swithed to different folders/teams and if u use terraform apply state_files created for different teams separately.
 
 provider "aws" {
   region = "us-east-1"
