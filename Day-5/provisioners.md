@@ -64,11 +64,11 @@ Certainly, let's delve deeper into the `file`, `remote-exec`, and `local-exec` p
    ```hcl
    resource "null_resource" "example" {
      triggers = {
-       always_run = "${timestamp()}"
+       always_run = "${timestamp()}"    # NO NEED.
      }
 
      provisioner "local-exec" {
-       command = "echo 'This is a local command'"
+       command = "echo 'This is a local command'"    #IT'S ENOUGH.
      }
    }
    ```
