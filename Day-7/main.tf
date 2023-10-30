@@ -21,12 +21,7 @@ data "vault_kv_secret_v2" "example" {
   name  = "test-secret" // change it according to your secret
 }
 
-resource "aws_instance" "my_instance" {
-  ami           = "ami-053b0d53c279acc90"
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "test"
-    Secret = data.vault_kv_secret_v2.example.data["foo"]
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = data.vault_kv_secret_v2.example.data["bucket_name"]
   }
 }
